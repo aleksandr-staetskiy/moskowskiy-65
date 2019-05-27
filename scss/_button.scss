@@ -1,0 +1,54 @@
+.button {
+  padding: 10px 30px;
+  border: none;
+  background: $color-main;
+  transition: 0.6s ease;
+
+  &_theme_transparent {
+    background: none;
+    border: 1px solid $color-main;
+  }
+
+  &_w_auto {
+    width: 100%;
+  }
+
+  &_lg {
+    width: 100%;
+    background: #324690;
+  }
+
+  &_pink {
+    margin-top: 15px;
+    background: $color-main;
+  }
+
+  &__text {
+    color: #fff;
+
+    &_dark {
+      color: #333;
+      @media (max-width: 769px) {
+        & {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+}
+
+&_bd_orange {
+  border: 2px solid $color-main;
+  background: #fff;
+
+  @media (max-width: 769px) {
+    & {
+      padding: 7px 12px;
+      margin-right: 10px;
+    }
+  }
+}
+}
